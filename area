@@ -1,0 +1,19 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var table = ee.FeatureCollection("projects/ee-project143/assets/study_area"),
+    imageVisParam = {"opacity":1,"bands":["B4","B3","B2"],"min":0.06828481867909432,"max":0.15911093190312386,"gamma":1};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+Map.centerObject(table,11)
+var l8 = ee.ImageCollection("LANDSAT/LC08/C02/T1_TOA") 
+var image = l8.filterBounds(table)
+               .filterDate('2020-01-01','2020-12-31')
+               .filterMetadata('CLOUD_COVER','less_than',1)
+               .median()
+               .clip(table) // clip the assest /ROI
+
+print(image,imageVisParam,'True_color')
+//Display the cliped image with visual parameters 
+
+var area = table.geometry().area()
+
+var area_total = ee.Number(area).divide(1e6).round()
+print(area_total,'sqkm')

@@ -1,0 +1,29 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ROI = ee.FeatureCollection("projects/ee-project143/assets/study_area");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var LandsatLST = require('users/sofiaermida/landsat_smw_lst:modules/Landsat_LST.js')
+// select region of interest, date range, and landsat satellite
+var geometry =ROI;
+var satellite = 'L7';
+var date_start = '2000-01-01';
+var date_end = '2013-04-16';
+var use_ndvi = true;
+// get landsat collection with added variables: NDVI, FVC, TPW, EM, LST
+var LandsatColl = LandsatLST.collection(satellite, date_start, date_end, geometry, use_ndvi)
+print(LandsatColl)
+
+
+LandsatColl =  LandsatColl.map(function(image){return image.select('LST').clip(geometry)})
+var title = {
+  title: 'Day Temperature',
+  hAxis: {title: 'Time'},
+  vAxis: {title: 'Temperature C'},
+};
+
+//Chart for day time temperature
+var chart = ui.Chart.image.series
+(LandsatColl,geometry, ee.Reducer.mean(), 30,'system:time_start')
+    .setOptions(title)
+    .setChartType('ColumnChart');
+print('Day Surface Temperature in Celsius');
+print(chart);

@@ -1,0 +1,955 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var water = 
+    /* color: #0000ff */
+    /* shown: false */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Polygon(
+                [[[81.81459139120773, 21.20441851666008],
+                  [81.81214520107604, 21.205978875249492],
+                  [81.81386183863214, 21.20333821434656],
+                  [81.81480595241881, 21.200697543027513],
+                  [81.81712338100768, 21.204138432429758]]]),
+            {
+              "LC": 1,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80629060763087, 21.195125932955758]),
+            {
+              "LC": 1,
+              "system:index": "1"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80749223726954, 21.195285982136788]),
+            {
+              "LC": 1,
+              "system:index": "2"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80938051241603, 21.198006791687877]),
+            {
+              "LC": 1,
+              "system:index": "3"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7963608344698, 21.179706401366158]),
+            {
+              "LC": 1,
+              "system:index": "4"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79112787242579, 21.157572823166593]),
+            {
+              "LC": 1,
+              "system:index": "5"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79087038036036, 21.15637214396357]),
+            {
+              "LC": 1,
+              "system:index": "6"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79172868724513, 21.15581182366978]),
+            {
+              "LC": 1,
+              "system:index": "7"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79215784068751, 21.157492778189344]),
+            {
+              "LC": 1,
+              "system:index": "8"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79112787242579, 21.156212052667446]),
+            {
+              "LC": 1,
+              "system:index": "9"
+            }),
+        ee.Feature(
+            ee.Geometry.Polygon(
+                [[[81.77262300258445, 21.146326608130654],
+                  [81.77399629360008, 21.14544604413085],
+                  [81.77571290736961, 21.14664681192368],
+                  [81.7727946639614, 21.1472071668959]]]),
+            {
+              "LC": 1,
+              "system:index": "10"
+            }),
+        ee.Feature(
+            ee.Geometry.Polygon(
+                [[[81.82653040028538, 21.111120403457218],
+                  [81.82713121510471, 21.109759206438838],
+                  [81.82841867543186, 21.1101595597991],
+                  [81.82678789235081, 21.112401518657325],
+                  [81.82378381825413, 21.11104033338998]]]),
+            {
+              "LC": 1,
+              "system:index": "11"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79500238757258, 21.219931051667395]),
+            {
+              "LC": 1,
+              "system:index": "12"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79826395373469, 21.22209133803186]),
+            {
+              "LC": 1,
+              "system:index": "13"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81328432421809, 21.219210949184443]),
+            {
+              "LC": 1,
+              "system:index": "14"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81182520251399, 21.218970914242572]),
+            {
+              "LC": 1,
+              "system:index": "15"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7267878639302, 21.17104258987919]),
+            {
+              "LC": 1,
+              "system:index": "16"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.72833281632278, 21.172963481498467]),
+            {
+              "LC": 1,
+              "system:index": "17"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.72798949356887, 21.17184296441845]),
+            {
+              "LC": 1,
+              "system:index": "18"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.72953444596145, 21.172323187063476]),
+            {
+              "LC": 1,
+              "system:index": "19"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73073607560012, 21.172963481498467]),
+            {
+              "LC": 1,
+              "system:index": "20"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73236685868117, 21.169601904796533]),
+            {
+              "LC": 1,
+              "system:index": "21"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75391036148879, 21.1591164963854]),
+            {
+              "LC": 1,
+              "system:index": "22"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7542536842427, 21.1591164963854]),
+            {
+              "LC": 1,
+              "system:index": "23"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.78338003583309, 21.167778225378214]),
+            {
+              "LC": 1,
+              "system:index": "24"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.78423834271786, 21.167618146418835]),
+            {
+              "LC": 1,
+              "system:index": "25"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.78475332684872, 21.167778225378214]),
+            {
+              "LC": 1,
+              "system:index": "26"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.78029013104793, 21.19130747413369]),
+            {
+              "LC": 1,
+              "system:index": "27"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7796893162286, 21.19186765998434]),
+            {
+              "LC": 1,
+              "system:index": "28"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.78363752789852, 21.205465471186958]),
+            {
+              "LC": 1,
+              "system:index": "29"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.78200674481747, 21.20266477848954]),
+            {
+              "LC": 1,
+              "system:index": "30"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79299307294247, 21.203705041977123]),
+            {
+              "LC": 1,
+              "system:index": "31"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.8170256657159, 21.20154448653976]),
+            {
+              "LC": 1,
+              "system:index": "32"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.83125658956966, 21.209884988498423]),
+            {
+              "LC": 1,
+              "system:index": "33"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75184072467651, 21.181423762537385]),
+            {
+              "LC": 1,
+              "system:index": "34"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75304235431518, 21.180863537107008]),
+            {
+              "LC": 1,
+              "system:index": "35"
+            })]),
+    builtup = 
+    /* color: #ff0000 */
+    /* shown: false */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Point([81.77857903119117, 21.20533221044208]),
+            {
+              "LC": 2,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.77596045003025, 21.194808628568527]),
+            {
+              "LC": 2,
+              "system:index": "1"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7754454658994, 21.19400837834447]),
+            {
+              "LC": 2,
+              "system:index": "2"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7746729897031, 21.192807994882184]),
+            {
+              "LC": 2,
+              "system:index": "3"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.8029112862119, 21.192567917019602]),
+            {
+              "LC": 2,
+              "system:index": "4"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80977774129002, 21.18928681380857]),
+            {
+              "LC": 2,
+              "system:index": "5"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80977774129002, 21.188246448799973]),
+            {
+              "LC": 2,
+              "system:index": "6"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80994940266697, 21.18784630646218]),
+            {
+              "LC": 2,
+              "system:index": "7"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.8131251381406, 21.191527575107976]),
+            {
+              "LC": 2,
+              "system:index": "8"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82122941855421, 21.190375622182145]),
+            {
+              "LC": 2,
+              "system:index": "9"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82174440268507, 21.189975485608638]),
+            {
+              "LC": 2,
+              "system:index": "10"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82011361960402, 21.19045564936685]),
+            {
+              "LC": 2,
+              "system:index": "11"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81470628622999, 21.186774354022116]),
+            {
+              "LC": 2,
+              "system:index": "12"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81110139731398, 21.18853498497417]),
+            {
+              "LC": 2,
+              "system:index": "13"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80929895285597, 21.188214871815486]),
+            {
+              "LC": 2,
+              "system:index": "14"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81264634970655, 21.18717449926181]),
+            {
+              "LC": 2,
+              "system:index": "15"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81092973593702, 21.185814001027477]),
+            {
+              "LC": 2,
+              "system:index": "16"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80672403220167, 21.185733971329622]),
+            {
+              "LC": 2,
+              "system:index": "17"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80672403220167, 21.185733971329622]),
+            {
+              "LC": 2,
+              "system:index": "18"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.777390440275, 21.17348891721301]),
+            {
+              "LC": 2,
+              "system:index": "19"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.77670379476719, 21.172128293058826]),
+            {
+              "LC": 2,
+              "system:index": "20"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.80188002955978, 21.193027978838188]),
+            {
+              "LC": 2,
+              "system:index": "21"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7320251098549, 21.176749543257237]),
+            {
+              "LC": 2,
+              "system:index": "22"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73365589293596, 21.17762992104413]),
+            {
+              "LC": 2,
+              "system:index": "23"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7360591522133, 21.17907052793617]),
+            {
+              "LC": 2,
+              "system:index": "24"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73811908873674, 21.180110957519126]),
+            {
+              "LC": 2,
+              "system:index": "25"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73824783476945, 21.182471905187267]),
+            {
+              "LC": 2,
+              "system:index": "26"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74550052794572, 21.184072526230594]),
+            {
+              "LC": 2,
+              "system:index": "27"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7375182739174, 21.186793542232767]),
+            {
+              "LC": 2,
+              "system:index": "28"
+            })]),
+    vegetation = 
+    /* color: #008000 */
+    /* shown: false */
+    ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Point([81.737962480391, 21.119810814714942]),
+            {
+              "LC": 3,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7401940782914, 21.120291206071485]),
+            {
+              "LC": 3,
+              "system:index": "1"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7434556444535, 21.119970945340004]),
+            {
+              "LC": 3,
+              "system:index": "2"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74139570793007, 21.117088567641286]),
+            {
+              "LC": 3,
+              "system:index": "3"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73985075553749, 21.118850027334467]),
+            {
+              "LC": 3,
+              "system:index": "4"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7434556444535, 21.119810814714942]),
+            {
+              "LC": 3,
+              "system:index": "5"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74706053336952, 21.121091854874983]),
+            {
+              "LC": 3,
+              "system:index": "6"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74276899894569, 21.11901015899671]),
+            {
+              "LC": 3,
+              "system:index": "7"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73393284327949, 21.161873026518595]),
+            {
+              "LC": 3,
+              "system:index": "8"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73599277980293, 21.162833534965646]),
+            {
+              "LC": 3,
+              "system:index": "9"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73582111842597, 21.162513366175894]),
+            {
+              "LC": 3,
+              "system:index": "10"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7371944094416, 21.16203311169265]),
+            {
+              "LC": 3,
+              "system:index": "11"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73796072949506, 21.16203311169265]),
+            {
+              "LC": 3,
+              "system:index": "12"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73710242261029, 21.16331378685164]),
+            {
+              "LC": 3,
+              "system:index": "13"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73641577710248, 21.162353281521302]),
+            {
+              "LC": 3,
+              "system:index": "14"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73641577710248, 21.160912511838283]),
+            {
+              "LC": 3,
+              "system:index": "15"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73864737500287, 21.160912511838283]),
+            {
+              "LC": 3,
+              "system:index": "16"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73916235913373, 21.160272165255247]),
+            {
+              "LC": 3,
+              "system:index": "17"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74019232739545, 21.159631815902042]),
+            {
+              "LC": 3,
+              "system:index": "18"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75804511059857, 21.17243827655586]),
+            {
+              "LC": 3,
+              "system:index": "19"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75959006299115, 21.174039006201316]),
+            {
+              "LC": 3,
+              "system:index": "20"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7801464873804, 21.209957167490337]),
+            {
+              "LC": 3,
+              "system:index": "21"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82151687922611, 21.200194819781515]),
+            {
+              "LC": 3,
+              "system:index": "22"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82426346125736, 21.198114236036293]),
+            {
+              "LC": 3,
+              "system:index": "23"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82481729450066, 21.19504397718096]),
+            {
+              "LC": 3,
+              "system:index": "24"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82227117787569, 21.193075832454543]),
+            {
+              "LC": 3,
+              "system:index": "25"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.8226145006296, 21.197557206168174]),
+            {
+              "LC": 3,
+              "system:index": "26"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.8281076646921, 21.193235883856143]),
+            {
+              "LC": 3,
+              "system:index": "27"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82656271229952, 21.192755729131267]),
+            {
+              "LC": 3,
+              "system:index": "28"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.83119756947725, 21.199157663838594]),
+            {
+              "LC": 3,
+              "system:index": "29"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.828450987446, 21.198837573691623]),
+            {
+              "LC": 3,
+              "system:index": "30"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75012755866082, 21.174336485193464]),
+            {
+              "LC": 3,
+              "system:index": "31"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75270247931512, 21.175777124166057]),
+            {
+              "LC": 3,
+              "system:index": "32"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7520158338073, 21.17369619670165]),
+            {
+              "LC": 3,
+              "system:index": "33"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.75978109727522, 21.186178321361215]),
+            {
+              "LC": 3,
+              "system:index": "34"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74681296277781, 21.181443582165535]),
+            {
+              "LC": 3,
+              "system:index": "35"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74681296277781, 21.181443582165535]),
+            {
+              "LC": 3,
+              "system:index": "36"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.76243414808054, 21.197129030158006]),
+            {
+              "LC": 3,
+              "system:index": "37"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.76535239148875, 21.19616874445025]),
+            {
+              "LC": 3,
+              "system:index": "38"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81341757703562, 21.206891580511407]),
+            {
+              "LC": 3,
+              "system:index": "39"
+            })]),
+    imageVisParam = {"opacity":1,"bands":["B3","B2","B1"],"min":0.11300988733768463,"max":0.18061096727848053,"gamma":1},
+    others = /* color: #c0c0c0 */ee.FeatureCollection(
+        [ee.Feature(
+            ee.Geometry.Point([81.77920503923333, 21.17730453369067]),
+            {
+              "LC": 4,
+              "system:index": "0"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7731110603515, 21.180345805139243]),
+            {
+              "LC": 4,
+              "system:index": "1"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.77465601274407, 21.18002567424799]),
+            {
+              "LC": 4,
+              "system:index": "2"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.77414102861322, 21.17898524406499]),
+            {
+              "LC": 4,
+              "system:index": "3"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81774301835931, 21.187228451649336]),
+            {
+              "LC": 4,
+              "system:index": "4"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.8170563728515, 21.187068393741857]),
+            {
+              "LC": 4,
+              "system:index": "5"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81671305009759, 21.186748277406984]),
+            {
+              "LC": 4,
+              "system:index": "6"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.82151956865228, 21.186748277406984]),
+            {
+              "LC": 4,
+              "system:index": "7"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81362314531243, 21.184187321771883]),
+            {
+              "LC": 4,
+              "system:index": "8"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.81327982255853, 21.18354707593115]),
+            {
+              "LC": 4,
+              "system:index": "9"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79577036210931, 21.17274250925231]),
+            {
+              "LC": 4,
+              "system:index": "10"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79619951555169, 21.17274250925231]),
+            {
+              "LC": 4,
+              "system:index": "11"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.79637117692864, 21.172022176742036]),
+            {
+              "LC": 4,
+              "system:index": "12"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7950837166015, 21.17298261930957]),
+            {
+              "LC": 4,
+              "system:index": "13"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7954270393554, 21.171862102374526]),
+            {
+              "LC": 4,
+              "system:index": "14"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7638079027548, 21.140438380042006]),
+            {
+              "LC": 4,
+              "system:index": "15"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.76552451652434, 21.139958053964836]),
+            {
+              "LC": 4,
+              "system:index": "16"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.76432288688567, 21.13851706639139]),
+            {
+              "LC": 4,
+              "system:index": "17"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.76106132072356, 21.141078812389512]),
+            {
+              "LC": 4,
+              "system:index": "18"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.7608896593466, 21.1389973971395]),
+            {
+              "LC": 4,
+              "system:index": "19"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.76415122550871, 21.13851706639139]),
+            {
+              "LC": 4,
+              "system:index": "20"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73991025897827, 21.188371627240603]),
+            {
+              "LC": 4,
+              "system:index": "21"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74094022723999, 21.187731399522367]),
+            {
+              "LC": 4,
+              "system:index": "22"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74669088336792, 21.188211570571017]),
+            {
+              "LC": 4,
+              "system:index": "23"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.74634756061401, 21.187651370862593]),
+            {
+              "LC": 4,
+              "system:index": "24"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73310568882981, 21.1799418253987]),
+            {
+              "LC": 4,
+              "system:index": "25"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73353484227219, 21.1799418253987]),
+            {
+              "LC": 4,
+              "system:index": "26"
+            }),
+        ee.Feature(
+            ee.Geometry.Point([81.73430731846848, 21.180021858231854]),
+            {
+              "LC": 4,
+              "system:index": "27"
+            })]),
+    ROI = ee.FeatureCollection("projects/ee-project143/assets/study_area"),
+    imageVisParam2 = {"opacity":1,"bands":["B3","B2","B1"],"min":0.12183483153581619,"max":0.1686026433110237,"gamma":1},
+    imageVisParam3 = {"opacity":1,"bands":["B1","B4","B7"],"min":0.12304671823978425,"max":0.2370988804101944,"gamma":1};
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var l5 = ee.ImageCollection("LANDSAT/LT05/C02/T1_TOA")
+var image = l5.filterBounds(ROI)
+               .filterDate('1990-01-01','1990-12-31')
+               .filterMetadata('CLOUD_COVER','less_than',1)
+               .median()
+               .clip(ROI)
+
+print(image)
+
+Map.addLayer(image,imageVisParam2,'True_color')
+Map.addLayer(image,imageVisParam3,'landcover_type')
+Map.centerObject(ROI,11)
+
+var training = water.merge(builtup).merge(vegetation).merge(others)
+
+print(training)
+
+var bands =['B1','B2','B3','B4','B5','B6','B7']
+
+var input = image.select(bands)
+
+var trainimage = input.sampleRegions({
+ collection: training,
+ properties: ['LC'],
+ scale : 30})
+ 
+ print(trainimage)
+
+var trainData = trainimage.randomColumn()
+
+var trainset =  trainData.filter(ee.Filter.lessThan('random',0.8))
+
+var testset = trainData.filter(ee.Filter.greaterThanOrEquals('random',0.8))
+
+var classifier = ee.Classifier.smileCart().train({
+ features:trainimage,
+ classProperty:'LC',
+ inputProperties:bands})
+
+var classified = input.classify(classifier)
+
+Map.addLayer(classified, {min:1 , max:4 , palette: ['#0000ff','#ff0000','#008000','c0c0c0']})
+
+var trainaccuracy = classifier.confusionMatrix()
+print(trainaccuracy)
+print(trainaccuracy.accuracy())
+
+
+// Spatial join.
+var distFilter = ee.Filter.withinDistance({
+  distance: 1000,
+  leftField: '.geo',
+  rightField: '.geo',
+  maxError: 10
+});
+
+var join = ee.Join.inverted();
+
+// Apply the join.
+var training = join.apply(trainset, testset, distFilter);
+print(trainset.size());
+
+
+//trained with 70% of  our data
+var trainedclassifier = ee.Classifier.smileCart().train({
+  features:trainset,
+  classProperty:'LC',
+  inputProperties:bands
+})
+
+
+//classify the test feature collection
+var test = testset.classify(trainedclassifier)
+
+var confusion_matrix = test.errorMatrix('LC','classification')
+print(confusion_matrix)
+print(confusion_matrix.accuracy())
+//confusionmatrix and accuracy 
+
+Export.image.toDrive({
+  image: classified,
+  folder:'GEE',
+  scale:30,
+  region: ROI,
+  maxPixels:1e13
+})
+var veg = classified.select('classification').eq(3)
+var area_veg = veg.multiply(ee.Image.pixelArea()).divide(1e6);
+var Builtup = classified.select('classification').eq(2)
+var area_builtup = Builtup.multiply(ee.Image.pixelArea()).divide(1e6)
+var Water = classified.select('classification').eq(1)
+var area_water = Water.multiply(ee.Image.pixelArea()).divide(1e6)
+
+//Reducing the statistics for your study area
+var stat = area_veg.reduceRegion ({
+  reducer: ee.Reducer.sum(),
+  geometry:ROI,
+  scale: 30,
+  maxPixels: 1e9
+});
+
+//Get the sq km area for vegetation
+print ('Vegetation Area (in sq.km)', stat);
+
+var stat = area_water.reduceRegion ({
+  reducer: ee.Reducer.sum(),
+  geometry:ROI,
+  scale: 30,
+  maxPixels: 1e9
+});
+
+//Get the sq km area for vegetation
+print ('Water Area (in sq.km)', stat);
+
+
+var stat = area_builtup.reduceRegion ({
+  reducer: ee.Reducer.sum(),
+  geometry: ROI,
+  scale: 30,
+  maxPixels: 1e9
+});
+
+//Get the sq km area for vegetation
+print ('Builtup Area (in sq.km)', stat);

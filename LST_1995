@@ -1,0 +1,39 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var ROI = ee.FeatureCollection("projects/ee-project143/assets/study_area");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+var LandsatLST = require('users/sofiaermida/landsat_smw_lst:modules/Landsat_LST.js')
+// select region of interest, date range, and landsat satellite
+var geometry =ROI;
+var satellite = 'L5';
+var date_start = '1995-01-01';
+var date_end = '1995-12-31';
+var use_ndvi = true;
+// get landsat collection with added variables: NDVI, FVC, TPW, EM, LST
+var LandsatColl = LandsatLST.collection(satellite, date_start, date_end, geometry, use_ndvi)
+print(LandsatColl)
+
+var cmap1 = ['blue', 'cyan', 'green', 'yellow', 'red'];
+var cmap2 = ['F2F2F2','EFC2B3','ECB176','E9BD3A','E6E600','63C600','00A600']; 
+Map.centerObject(geometry)//20 images 
+var exImage_m = LandsatColl.set({type: 'Image',
+id: 'LANDSAT/LT05/C02/T1_L2/LT05_142046_19950430',
+version: 1627821771169995
+
+}).filterBounds(geometry)
+var exImage = exImage_m.map(function(img){return img.clip(geometry)})
+
+Map.addLayer(exImage.select('TPW'),{min:0.0, max:60.0, palette:cmap1},'TCWV')
+Map.addLayer(exImage.select('TPWpos'),{min:0,max:25,palette:cmap1},'TPWpos')
+Map.addLayer(exImage.select('FVC'),{min:0.0, max:1.0, palette:cmap2}, 'FVC')
+Map.addLayer(exImage.select('EM'),{min:0.9520941139280445,max:0.9857882348808938,palette:cmap1},'Emissivity')
+Map.addLayer(exImage.select('B6'),{min:287.3728485107422,max:298.3400115966797,palette:cmap1},'TIR_BT')
+Map.addLayer(exImage.select('LST'),{min:297.2643617434584,max:305.2824736198803,palette:cmap1},'LST')
+
+Export.image.toDrive({
+  image: exImage.select('LST').mean(),
+  description: 'LST_1995',
+  scale: 30,
+  region: geometry,
+  fileFormat: 'GeoTIFF',
+})
+
